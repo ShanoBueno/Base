@@ -1,12 +1,18 @@
-<h1>These are Bad Cats</h1>
 
-<ul>
+ 
+<div class="indexpage">
+<ul class="fullcat">
   <% @cats.each do |cat| %>
-    <li><a href="<%= cat_url(cat) %>"><%= cat.name %></a>
-    <li><%= cat.description %></li>
+    <li class="catname"><a href="<%= cat_url(cat) %>">------<%= cat.name %>------</a>
+    <li class="crimes"><%= cat.description %></li>
     </li>
 
   <% end %>
 </ul>
+</div>
 
-<a href="<%= new_cat_url %>">Report cat</a>
+<div class=report_area>
+<div class=report_button>
+<a href="<%= new_cat_url %>">Report Your Cat</a>
+</div>
+</div>

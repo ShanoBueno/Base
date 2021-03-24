@@ -9,6 +9,26 @@
   </head>
 
   <body>
+  <h1 class="title">These are Bad Cats</h1>
+
+
+  <nav class="header-group">
+
+
+      <ul class="header-list group">
+        <li class="listi"><a href="<%= cats_url %>">Home</a></li>
+        <li class="listi"><a href="<%= new_cat_url %>">Report Your Cat</a></li>
+        <li class="contact"><div class="dropdown">
+                <span>Contact</span>
+                <div class="dropdown-content">
+               <p>support@badcats.com</p>
+        </div>
+</div>
+      </ul>
+
+    </nav>
+  <div class="space">
+  </div>
     <%= yield %>
   </body>
 </html>

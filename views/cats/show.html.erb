@@ -1,29 +1,50 @@
-<h1><%= @cat.name %></h1>
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <th>Value</th>
-  </tr>
-  <% [:age, :birth_date, :color, :sex].each do |attr_name| %>
-    <tr>
-      <td><%= attr_name %></td>
-      <td><%= @cat.send(attr_name) %></td>
-    </tr>
-  <% end %>
-</table>
+<div class="showarea">
+<h1 class="show_title"><%= @cat.name.upcase %></h1>
 
-<label>Crimes</label>
-</br>
+
+<label class="profile" >AGE</label>
+<div class="value">
+<%=@cat.age%>
+</div>
+
+
+<label class="profile">BIRTHDATE</label>
+<div class="value">
+<%=@cat.birth_date%>
+</div>
+
+<label class="profile">COLOR</label>
+<div class="value">
+<%= @cat.color%>
+</div>
+
+<label class="profile">SEX</label>
+<div class="value">
+<%= @cat.sex %>
+</div>
+
+<label class="profile">CRIMES</label>
+
+<div class = value>
 <%=@cat.description%>
+</div>
 
 <br>
 <br>
-
-<a href="<%= edit_cat_url(@cat) %>">Edit <%= @cat.name %></a>
-
-<br>
 <br>
 
+<div class="buttonarea">
 
-<a href="<%= cats_url%>">All Cats</a>
+<div class="updatebutton">
+<a href="<%= edit_cat_url(@cat) %>">Update <%= @cat.name %></a>
+</div>
+
+<div class="showspace">
+</div>
+
+<div class="buttonarea">
+<br>
+<br>
+</div>
+

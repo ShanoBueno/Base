@@ -1,0 +1,46 @@
+.new_cat {
+  font-family: sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.form_area {
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+  
+  font-family: sans-serif; 
+  height: 800px;
+
+}
+
+.form {
+  display:flex; 
+  flex-direction: column;
+  
+  
+}
+
+.gender{
+  display:flex;
+  flex-direction: row; 
+}
+
+
+
+.crimes_label {
+
+  margin-top: 25px; 
+
+}
+
+.errors {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
